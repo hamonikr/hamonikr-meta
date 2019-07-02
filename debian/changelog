@@ -1,0 +1,6 @@
+hamonikr-meta (1.0.0) sun; urgency=medium
+
+  * defined basic package for HamoniKR (some package need to be installed manually due to licensing)
+
+ -- Kevin Kim <root@hamonikr.org>  Tue, 02 Jul 2019 09:39:28 +0900
+
