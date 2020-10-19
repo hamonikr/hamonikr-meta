@@ -1,6 +1,5 @@
-hamonikr-meta (1.0.0) sun; urgency=medium
+hamonikr-meta (2020.10.19) jin; urgency=medium
 
-  * defined basic package for HamoniKR (some package need to be installed manually due to licensing)
+  * build for HamoniKR 4.0
 
- -- Kevin Kim <root@hamonikr.org>  Tue, 02 Jul 2019 09:39:28 +0900
-
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 19 Oct 2020 18:03:43 +0900

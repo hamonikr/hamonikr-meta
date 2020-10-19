@@ -7,27 +7,15 @@ Standards-Version: 3.7.2
 
 Package: hamonikr-meta-cinnamon
 Architecture: all
-Conflicts: mint-meta-main, mint-meta-x64, mint-meta-gnome, mint-meta-cinnamon-dvd
-Replaces: mint-meta-main, mint-meta-x64, mint-meta-gnome, mint-meta-cinnamon-dvd
-Depends: hamonikr-meta-core, cinnamon, gir1.2-gnomedesktop-3.0, gir1.2-nemo-3.0, nemo, nemo-fileroller, nemo-filename-repairer, nemo-gtkhash, nemo-image-converter, nemo-seahorse, nemo-compare, folder-color-switcher, cinnamon-control-center, cinnamon-screensaver, cinnamon-screensaver-x-plugin
+Conflicts: hamonikr-meta-main
+Replaces: hamonikr-meta-main
+Depends: mint-meta-core, cinnamon, gir1.2-gnomedesktop-3.0, gir1.2-nemo-3.0, nemo, nemo-fileroller, folder-color-switcher, cinnamon-control-center, cinnamon-screensaver, base-files (>= 20.0.1hamonikr1), hamonikr-info (>= 2020.10.09), hamonikr-artwork, grub-theme-hamonikr, hamonikr-backgrounds, hamonikr-system-settings, hamonikr-jin-themes, plymouth-theme-hamonikr-logo, plymouth-theme-hamonikr-text, fsearch-trunk, nimf, nimf-libhangul
 Description: Set of packages installed by default in the Cinnamon edition of HamoniKR
  Set of packages installed by default in the Cinnamon edition of HamoniKR.
 
-Package: hamonikr-meta-core
+Package: hamonikr-desktop-environment
 Architecture: all
-Depends: hamonikr-info, hamonikr-artwork, mintsystem, hamonikr-system-adjustments, plymouth-theme-hamonikr-sun-logo, plymouth-theme-hamonikr-sun-text, mintbackup, mintinstall, mintupdate, mintwelcome, mintsources, mintdrivers, mintstick
-Description: Core HamoniKR packages
- Core HamoniKR packages.
-
-Package: hamonikr-meta-codecs
-Architecture: all
-Depends: adobe-flashplugin, cabextract, chromium-codecs-ffmpeg-extra, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-vaapi, libavcodec-extra, libdvdcss2, libdvdnav4, libdvdread4, libhal1-flash, unrar, unshield, vlc, vlc-l10n, vlc-plugin-notify
-Description: All the packages required for multimedia support in HamoniKR.
- All the packages required for multimedia support in HamoniKR.
-
-Package: cinnamon-desktop-environment
-Architecture: all
-Depends: hamonikr-meta-cinnamon, cinnamon-core, gnome-calculator, gnome-screenshot, gnome-terminal
+Depends: hamonikr-meta-cinnamon, mint-meta-cinnamon, gnome-calculator, gnome-screenshot, gnome-terminal
 Description: Cinnamon desktop environment - full desktop with extra components
  These are the extended components of Cinnamon, a desktop environment which
  provides advanced innovative features and a traditional user experience.
@@ -35,13 +23,3 @@ Description: Cinnamon desktop environment - full desktop with extra components
  This metapackage depends on all programs needed to have a fully fledged
  desktop environment. Install this if you want a complete cinnamon desktop,
  including graphical apps that allow users to perform almost all everyday tasks.
-
-Package: cinnamon-core
-Architecture: all
-Depends: cinnamon, cinnamon-control-center, cinnamon-screensaver, cinnamon-session, cinnamon-settings-daemon, nemo, cinnamon-l10n
-Description: Cinnamon desktop environment - essential components
- These are the core components of Cinnamon, a desktop environment which
- provides advanced innovative features and a traditional user experience.
- .
- This metapackage depends on basic components needed to use the desktop
- environment. Install this if you want a minimal cinnamon desktop.
