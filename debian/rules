@@ -43,8 +43,8 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	mkdir -p $(CURDIR)/debian/hamonikr-meta-core
 	mkdir -p $(CURDIR)/debian/hamonikr-meta-cinnamon
+	mkdir -p $(CURDIR)/debian/hamonikr-desktop-environment	
 
 # Build architecture-independent files here.
 binary-indep: build install
