@@ -9,7 +9,7 @@ Package: hamonikr-meta-cinnamon
 Architecture: all
 Conflicts: hamonikr-meta-main
 Replaces: hamonikr-meta-main
-Depends: mint-meta-core, cinnamon, gir1.2-gnomedesktop-3.0, gir1.2-nemo-3.0, nemo, nemo-fileroller, folder-color-switcher, cinnamon-control-center, cinnamon-screensaver, base-files (>= 20.0.1hamonikr1), hamonikr-info (>= 2020.10.09), hamonikr-artwork, grub-theme-hamonikr, hamonikr-backgrounds, hamonikr-system-settings, hamonikr-jin-themes, plymouth-theme-hamonikr-logo, plymouth-theme-hamonikr-text, fsearch-trunk, nimf, nimf-libhangul
+Depends: mint-meta-core, cinnamon, gir1.2-gnomedesktop-3.0, gir1.2-nemo-3.0, nemo, nemo-fileroller, folder-color-switcher, cinnamon-control-center, cinnamon-screensaver, base-files (>= 20.0.1hamonikr1), hamonikr-info (>= 2020.10.09), hamonikr-artwork, grub-theme-hamonikr, hamonikr-backgrounds, hamonikr-system-settings, plymouth-theme-hamonikr-logo, plymouth-theme-hamonikr-text, fsearch-trunk, nimf, nimf-libhangul
 Description: Set of packages installed by default in the Cinnamon edition of HamoniKR
  Set of packages installed by default in the Cinnamon edition of HamoniKR.
 
