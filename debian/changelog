@@ -1,3 +1,9 @@
+hamonikr-meta (2020.10.24) jin; urgency=medium
+
+  * Add dependancy hamonikr-jin-icon-theme
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 24 Oct 2020 16:55:40 +0900
+ 
 hamonikr-meta (2020.10.23) jin; urgency=medium
 
   * remove hamonikr-jin-theme
