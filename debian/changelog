@@ -1,3 +1,10 @@
+hamonikr-meta (2020.11.02) jin; urgency=medium
+
+  * remove dependancy plymouth-theme-hamonikr-logo
+  * remove dependancy plymouth-theme-hamonikr-text
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 02 Nov 2020 15:38:15 +0900
+
 hamonikr-meta (2020.10.30) jin; urgency=medium
 
   * remove dependancy grub-theme-hamonikr
