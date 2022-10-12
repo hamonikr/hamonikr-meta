@@ -1,25 +1,56 @@
 Source: hamonikr-meta
 Section: admin
 Priority: optional
-Maintainer: Kevin Kim <root@hamonikr.org>
-Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
-
-Package: hamonikr-meta-cinnamon
-Architecture: all
-Conflicts: hamonikr-meta-main
-Replaces: hamonikr-meta-main
-Depends: mint-meta-core, cinnamon, gir1.2-gnomedesktop-3.0, gir1.2-nemo-3.0, nemo, nemo-fileroller, folder-color-switcher, cinnamon-control-center, cinnamon-screensaver, base-files (>= 20.0.1hamonikr1), hamonikr-info (>= 2020.10.09), hamonikr-artwork, hamonikr-system-settings, fsearch-trunk, nimf, nimf-libhangul, hamonikr-jin-icon-theme
-Description: Set of packages installed by default in the Cinnamon edition of HamoniKR
- Set of packages installed by default in the Cinnamon edition of HamoniKR.
+Maintainer: HamoniKR <pkg@hamonikr.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
 
 Package: hamonikr-desktop-environment
 Architecture: all
-Depends: hamonikr-meta-cinnamon, mint-meta-cinnamon, gnome-calculator, gnome-screenshot, gnome-terminal
-Description: Cinnamon desktop environment - full desktop with extra components
- These are the extended components of Cinnamon, a desktop environment which
- provides advanced innovative features and a traditional user experience.
- .
- This metapackage depends on all programs needed to have a fully fledged
- desktop environment. Install this if you want a complete cinnamon desktop,
- including graphical apps that allow users to perform almost all everyday tasks.
+Conflicts:
+Replaces:
+Depends: hamonikr-desktop-base,
+         asbru-cm,
+         boot-select,
+         convert-svg,
+         git,
+         gprename,
+         hamonikr-checksum,
+         hamonikr-cli-tools,
+         hamonikr-conky,
+         hamonikr-ff,
+         hamonikr-games,
+         hamonikr-nemo-rabbitvcs,
+         hamonikr-printer-drivers,
+         hardinfo,
+         live-usb-creator,
+         lollypop,
+         mainline,
+         neofetch,
+         stacer,
+         systemback,
+         ventoy,
+         xpad
+Description: HamoniKR desktop environment
+ 하모니카OS의 전체 환경을 구성하는 패키지.
+
+Package: hamonikr-desktop-base
+Architecture: all
+Conflicts: 
+Replaces: 
+Depends: cinnamon-desktop-environment,
+         albert,
+         plank,
+         hamonikr-system,
+         hamonikr-help,
+         hamonikr-keyring,
+         hamonikr-zsh,
+         hamonikr-themes,
+         hamonikr-icons,         
+         hamonikrwelcome,
+         hamonikr-backgrounds,         
+         hamonikr-plymouth-theme-hanla,
+         hamonikr-grub-theme,         
+         nimf, nimf-libhangul
+Description: HamoniKR desktop environment
+ 하모니카OS의 기본 환경을 구성하는 패키지.

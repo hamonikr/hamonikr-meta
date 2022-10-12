@@ -1,36 +1,6 @@
-hamonikr-meta (2020.11.02) jin; urgency=medium
+hamonikr-meta (3.0.0) taebaek; urgency=medium
 
-  * remove dependancy plymouth-theme-hamonikr-logo
-  * remove dependancy plymouth-theme-hamonikr-text
+  * Release for HamoniKR 6.0
 
- -- HamoniKR <pkg@hamonikr.org>  Mon, 02 Nov 2020 15:38:15 +0900
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 12 Oct 2022 17:00:22 +0900
 
-hamonikr-meta (2020.10.30) jin; urgency=medium
-
-  * remove dependancy grub-theme-hamonikr
-
- -- HamoniKR <pkg@hamonikr.org>  Thu, 29 Oct 2020 14:43:23 +0900
-
-hamonikr-meta (2020.10.29) jin; urgency=medium
-
-  * remove dependancy hamonikr-backgrounds
-
- -- HamoniKR <pkg@hamonikr.org>  Thu, 29 Oct 2020 13:36:09 +0900
-
-hamonikr-meta (2020.10.24) jin; urgency=medium
-
-  * Add dependancy hamonikr-jin-icon-theme
-
- -- HamoniKR <pkg@hamonikr.org>  Sat, 24 Oct 2020 16:55:40 +0900
- 
-hamonikr-meta (2020.10.23) jin; urgency=medium
-
-  * remove hamonikr-jin-theme
-
- -- HamoniKR <pkg@hamonikr.org>  Fri, 23 Oct 2020 12:02:44 +0900
-
-hamonikr-meta (2020.10.19) jin; urgency=medium
-
-  * build for HamoniKR 4.0
-
- -- HamoniKR <pkg@hamonikr.org>  Mon, 19 Oct 2020 18:03:43 +0900
