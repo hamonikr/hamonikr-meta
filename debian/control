@@ -10,27 +10,30 @@ Architecture: all
 Conflicts:
 Replaces:
 Depends: hamonikr-desktop-base,
-         asbru-cm,
-         boot-select,
-         convert-svg,
          git,
-         gprename,
          hamonikr-checksum,
-         hamonikr-cli-tools,
          hamonikr-conky,
          hamonikr-ff,
-         hamonikr-games,
          hamonikr-nemo-rabbitvcs,
          hamonikr-printer-drivers,
-         hardinfo,
-         live-usb-creator,
-         lollypop,
-         mainline,
          neofetch,
          stacer,
-         systemback,
-         ventoy,
          xpad
+Recommends: asbru-cm,
+            hamonikr-cli-tools,
+            live-usb-creator,
+            fonts-inconsolata,
+            spacefm,
+            xdotool,
+            convert-svg,
+            boot-select,            
+            lollypop,            
+            hardinfo,            
+            gprename,        
+            mainline,            
+            hamonikr-games,            
+            systemback,            
+            ventoy        
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
 
@@ -50,7 +53,8 @@ Depends: cinnamon-desktop-environment,
          hamonikrwelcome,
          hamonikr-backgrounds,         
          hamonikr-plymouth-theme-hanla,
-         hamonikr-grub-theme,         
-         nimf, nimf-libhangul
+         hamonikr-grub-theme
+Recommends: nimf,
+            nimf-libhangul         
 Description: HamoniKR desktop environment
  하모니카OS의 기본 환경을 구성하는 패키지.
