@@ -53,7 +53,8 @@ Depends: cinnamon-desktop-environment,
          hamonikrwelcome,
          hamonikr-backgrounds,         
          hamonikr-plymouth-theme-hanla,
-         hamonikr-grub-theme
+         hamonikr-grub-theme,
+         samba
 Recommends: nimf,
             nimf-libhangul         
 Description: HamoniKR desktop environment
