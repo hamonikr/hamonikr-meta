@@ -1,3 +1,10 @@
+hamonikr-meta (3.0.5) taebaek; urgency=medium
+
+  * Add dependency hamonikr-upgrade-info
+   - Required hamonikrreport
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 17 Oct 2022 08:56:00 +0900
+
 hamonikr-meta (3.0.4) taebaek; urgency=medium
 
   * Fixed bugs

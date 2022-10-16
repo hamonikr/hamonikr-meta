@@ -47,7 +47,8 @@ Depends: cinnamon-desktop-environment,
          hamonikr-icons,         
          hamonikrwelcome,
          hamonikr-backgrounds,         
-         hamonikr-plymouth-theme-hanla
+         hamonikr-plymouth-theme-hanla,
+         hamonikr-upgrade-info
 Recommends: hamonikr-grub-theme,    
             lollypop,
             nimf,
