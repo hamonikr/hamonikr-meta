@@ -9,35 +9,25 @@ Package: hamonikr-desktop-environment
 Architecture: all
 Conflicts:
 Replaces:
-Depends: hamonikr-desktop-base,
-         hamonikr-checksum,
-         hamonikr-conky,
-         hamonikr-ff,
-         hamonikr-nemo-rabbitvcs,
-         hamonikr-printer-drivers
+Depends: hamonikr-desktop-base
 Recommends: asbru-cm,
             boot-select,            
-            convert-svg,
             fonts-inconsolata,
             gprename,
             git,    
-            hamonikr-games,            
+            hamonikr-printer-drivers,
+            hamonikr-games,     
+            hamonikr-nemo-rabbitvcs,     
+            hamonikr-checksum,
+            hamonikr-conky,  
             hardinfo,            
-            live-usb-creator,
             mainline,            
             nemo-compare,
-            nemo-compare,
-            nemo-emblems,
-            nemo-filename-repairer,
             nemo-image-converter,
             nemo-share,     
-            nemo-share,
             neofetch,
             stacer,
-            spacefm,
-            systemback,            
             ventoy,
-            xdotool,
             xpad
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
@@ -65,3 +55,18 @@ Recommends: hamonikr-grub-theme,
             samba
 Description: HamoniKR desktop environment
  하모니카OS의 기본 환경을 구성하는 패키지.
+
+Package: hamonikr-desktop-full
+Architecture: all
+Conflicts:
+Replaces:
+Depends: hamonikr-desktop-environment
+Recommends: convert-svg,
+            hamonikr-cli-tools,   
+            hamonikr-ff,    
+            live-usb-creator,
+            nemo-emblems,
+            nemo-filename-repairer,
+            systemback            
+Description: HamoniKR desktop environment
+ 하모니카OS의 여러가지 유틸을 포함하는 패키지.

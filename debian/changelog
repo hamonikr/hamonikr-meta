@@ -1,3 +1,12 @@
+hamonikr-meta (3.0.4) taebaek; urgency=medium
+
+  * Fixed bugs
+   - http://pms.invesume.com:8090/pages/viewpage.action?pageId=115580690
+  * Add new meta package - hamonikr-desktop-full
+   - Include useful utils for software developer
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 16 Oct 2022 13:09:28 +0900
+
 hamonikr-meta (3.0.3) taebaek; urgency=medium
 
   * Adjust dependency control
