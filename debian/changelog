@@ -1,3 +1,11 @@
+hamonikr-meta (3.0.6) taebaek; urgency=medium
+
+  * Add hamonikr-desktop-extra meta-package
+   - Include useful tools for software developer
+   - cli-tools, filezilla, gimp, inkscape, gh, github-desktop
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 18 Oct 2022 23:31:40 +0900
+
 hamonikr-meta (3.0.5) taebaek; urgency=medium
 
   * Add dependency hamonikr-upgrade-info

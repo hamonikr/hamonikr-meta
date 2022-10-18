@@ -5,33 +5,6 @@ Maintainer: HamoniKR <pkg@hamonikr.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 
-Package: hamonikr-desktop-environment
-Architecture: all
-Conflicts:
-Replaces:
-Depends: hamonikr-desktop-base
-Recommends: asbru-cm,
-            boot-select,            
-            fonts-inconsolata,
-            gprename,
-            git,    
-            hamonikr-printer-drivers,
-            hamonikr-games,     
-            hamonikr-nemo-rabbitvcs,     
-            hamonikr-checksum,
-            hamonikr-conky,  
-            hardinfo,            
-            mainline,            
-            nemo-compare,
-            nemo-image-converter,
-            nemo-share,     
-            neofetch,
-            stacer,
-            ventoy,
-            xpad
-Description: HamoniKR desktop environment
- 하모니카OS의 전체 환경을 구성하는 패키지.
-
 Package: hamonikr-desktop-base
 Architecture: all
 Conflicts: 
@@ -51,23 +24,80 @@ Depends: cinnamon-desktop-environment,
          hamonikr-upgrade-info
 Recommends: hamonikr-grub-theme,    
             lollypop,
+            celluloid,
             nimf,
             nimf-libhangul,   
             samba
 Description: HamoniKR desktop environment
  하모니카OS의 기본 환경을 구성하는 패키지.
 
+Package: hamonikr-desktop-environment
+Architecture: all
+Conflicts:
+Replaces:
+Depends: hamonikr-desktop-base
+Recommends: git,            
+            fonts-inconsolata,
+            gprename,
+            hamonikr-printer-drivers,
+            hamonikr-games,     
+            hamonikr-conky,  
+            hamonikrreport,
+            hamonikr-drive,
+            hamonikr-backup,
+            hardinfo,            
+            hamonikr-nemo-rabbitvcs,
+            nemo-compare,
+            nemo-image-converter,
+            language-pack-ko,
+            language-pack-gnome-ko,
+            nemo-share,     
+            neofetch,
+            numlockx,
+            stacer,
+            slack-desktop,
+            ventoy,
+            udpcast,
+            xpad,
+            vim,
+            htop,
+            zoom
+Description: HamoniKR desktop environment
+ 하모니카OS의 전체 환경을 구성하는 패키지.
+
 Package: hamonikr-desktop-full
 Architecture: all
 Conflicts:
 Replaces:
 Depends: hamonikr-desktop-environment
-Recommends: convert-svg,
-            hamonikr-cli-tools,   
+Recommends: asbru-cm,
+            boot-select,
+            convert-svg,
+            mainline,   
             hamonikr-ff,    
+            hamonikr-checksum,            
             live-usb-creator,
             nemo-emblems,
             nemo-filename-repairer,
-            systemback            
+            systemback,
+            qt-fsarchiver
 Description: HamoniKR desktop environment
  하모니카OS의 여러가지 유틸을 포함하는 패키지.
+
+Package: hamonikr-desktop-extra
+Architecture: all
+Conflicts:
+Replaces:
+Depends: 
+Recommends: hamonikr-cli-tools,   
+            filezilla,
+            slack-desktop,
+            zoom,
+            gimp, 
+            gimp-help-ko,
+            inkscape,
+            gh,
+            github-desktop
+Description: HamoniKR desktop environment
+ 하모니카OS 환경에서 소프트웨어를 개발하는 개발자를 위한
+여러가지 유용한 프로그램을 제공하는 패키지.
