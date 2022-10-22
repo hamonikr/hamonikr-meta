@@ -1,3 +1,10 @@
+hamonikr-meta (3.0.7) taebaek; urgency=medium
+
+  * Update hamonikr-desktop-base.postinst
+   - Removed apt part, because of can't work inside postinst
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 22 Oct 2022 13:15:33 +0900
+
 hamonikr-meta (3.0.6) taebaek; urgency=medium
 
   * Add hamonikr-desktop-extra meta-package

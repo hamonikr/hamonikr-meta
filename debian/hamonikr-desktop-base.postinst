@@ -22,14 +22,6 @@ exec_cmd() {
 
 setup() {
 
-    PRE_INSTALL_PKGS=""
-    [ ! -e /usr/lib/apt/methods/https ] && PRE_INSTALL_PKGS="${PRE_INSTALL_PKGS} apt-transport-https"
-    [ ! -x /usr/bin/lsb_release ] && PRE_INSTALL_PKGS="${PRE_INSTALL_PKGS} lsb-release"
-    [ ! -x /usr/bin/gpg ] && PRE_INSTALL_PKGS="${PRE_INSTALL_PKGS} gnupg"
-    if [ "X${PRE_INSTALL_PKGS}" != "X" ]; then
-        exec_cmd "apt-get install -y${PRE_INSTALL_PKGS} > /dev/null 2>&1"
-    fi
-
     DistributorID=$(lsb_release -i -s)
     RELEASE=$(lsb_release -d -s)
     CODENAME=$(lsb_release -c -s)
@@ -52,7 +44,7 @@ setup() {
     eval $(apt-config shell APT_TRUSTED_PARTS Dir::Etc::trustedparts/d)
     HAMONIKR_TRUSTED_PART=${APT_TRUSTED_PARTS}hamonikr.gpg
 
-    if [ ! -f $HAMONIKR_TRUSTED_PART ]; then
+    if [ ! -f $HAMONIKR_TRUSTED_PART ] && [ -x /usr/bin/gpg ] ; then
         KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF+FK9MBEADF4B/AOq7OSIxKu3bqVaYSH+VsLo5slCaujfgSiha9kERgs+Wj
@@ -123,9 +115,6 @@ Tzr8nlWo8LdZB9DL7r25gXcLcSk1jedLRJZUAWAIdj/kgSLWkievkiSCc8w=
         *)
         ;;
     esac
-
-    exec_cmd 'apt-get update'
-
 }
 
 case "$1" in
