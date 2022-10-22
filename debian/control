@@ -27,7 +27,8 @@ Recommends: hamonikr-grub-theme,
             celluloid,
             nimf,
             nimf-libhangul,   
-            samba
+            samba,
+            nemo-filename-repairer
 Description: HamoniKR desktop environment
  하모니카OS의 기본 환경을 구성하는 패키지.
 
@@ -55,13 +56,10 @@ Recommends: git,
             neofetch,
             numlockx,
             stacer,
-            slack-desktop,
             ventoy,
             udpcast,
             xpad,
-            vim,
-            htop,
-            zoom
+            vim
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
 
@@ -72,15 +70,16 @@ Replaces:
 Depends: hamonikr-desktop-environment
 Recommends: asbru-cm,
             boot-select,
-            convert-svg,
             mainline,   
             hamonikr-ff,    
-            hamonikr-checksum,            
-            live-usb-creator,
             nemo-emblems,
-            nemo-filename-repairer,
-            systemback,
-            qt-fsarchiver
+            htop,
+            filezilla,
+            slack-desktop,
+            zoom,
+            gimp, 
+            gimp-help-ko,
+            inkscape
 Description: HamoniKR desktop environment
  하모니카OS의 여러가지 유틸을 포함하는 패키지.
 
@@ -90,14 +89,48 @@ Conflicts:
 Replaces:
 Depends: 
 Recommends: hamonikr-cli-tools,   
-            filezilla,
-            slack-desktop,
-            zoom,
-            gimp, 
-            gimp-help-ko,
-            inkscape,
+            live-usb-creator,
+            convert-svg,
+            hamonikr-checksum,            
+            systemback,
+            qt-fsarchiver,
             gh,
-            github-desktop
+            github-desktop,
+            docker-ce,
+            docker-ce-cli,
+            containerd.io,
+            docker-compose-plugin,
+            debhelper,
+            devscripts,
+            equivs,
+            apt-rdepends,
+            apt-file,
+            build-essential,
+            sassc,
+            git,
+            figlet,
+            xclip,
+            vim,
+            openssh-client,
+            dumpet,
+            xorriso,
+            squashfs-tools,
+            gddrescue,
+            qemu-kvm,
+            libvirt-clients,
+            libvirt-daemon-system,
+            bridge-utils,
+            virt-manager,
+            ovmf,
+            qemu,
+            virt-viewer,
+            qemu-system,
+            gir1.2-spiceclientgtk-3.0,
+            fsarchiver,
+            udpcast,
+            packaging-dev,
+            virtualbox,
+            virtualbox-ext-pack
 Description: HamoniKR desktop environment
  하모니카OS 환경에서 소프트웨어를 개발하는 개발자를 위한
  여러가지 유용한 프로그램을 제공하는 패키지.
