@@ -1,3 +1,9 @@
+hamonikr-meta (3.0.9) taebaek; urgency=medium
+
+  * Add extra section in taebaek repo
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 22 Oct 2022 20:46:54 +0900
+
 hamonikr-meta (3.0.8) taebaek; urgency=medium
 
   * Update hamonikr-desktop-extra
