@@ -119,7 +119,7 @@ Tzr8nlWo8LdZB9DL7r25gXcLcSk1jedLRJZUAWAIdj/kgSLWkievkiSCc8w=
 
 case "$1" in
     configure)
-        setup
+        # setup
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

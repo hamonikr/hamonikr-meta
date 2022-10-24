@@ -1,3 +1,10 @@
+hamonikr-meta (3.1.0) taebaek; urgency=medium
+
+  * Removed repo install process in postinst
+   - Causes ISO build error
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 24 Oct 2022 22:43:37 +0900
+
 hamonikr-meta (3.0.9) taebaek; urgency=medium
 
   * Add extra section in taebaek repo
