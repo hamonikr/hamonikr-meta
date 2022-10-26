@@ -1,3 +1,10 @@
+hamonikr-meta (3.1.8) taebaek; urgency=medium
+
+  * Update web browser dependancy
+   - Removed google chrome
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 26 Oct 2022 16:00:47 +0900
+
 hamonikr-meta (3.1.7) taebaek; urgency=medium
 
   * Update web browser dependancy
