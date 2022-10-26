@@ -78,7 +78,7 @@ Recommends: asbru-cm,
             mainline,   
             nemo-compare,
             nemo-emblems,
-            nemo-filename-repairer            
+            nemo-filename-repairer,            
             nemo-image-converter,          
             onboard,
             seahorse,
