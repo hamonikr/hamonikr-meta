@@ -52,8 +52,7 @@ Architecture: all
 Conflicts:
 Replaces:
 Depends: hamonikr-desktop-environment
-Recommends: asbru-cm,
-            boot-select,
+Recommends: boot-select,
             drawing,
             docker-ce,
             docker-ce-cli,
@@ -62,14 +61,9 @@ Recommends: asbru-cm,
             filezilla,
             firefox,
             firefox-locale-ko,
-            fonts-nanum,
-            fonts-nanum-coding,
-            fonts-nanum-extra,
-            fonts-noto-cjk-extra,
             google-chrome-stable,
             gimp, 
             gimp-help-ko,
-            gprename,
             hamonikr-conky,     
             hamonikr-ff,    
             hamonikr-fonts,           
@@ -77,11 +71,11 @@ Recommends: asbru-cm,
             hamonikr-nemo-rabbitvcs,     
             hamonikr-stylish-icon,
             hamonikr-onboard-layout-ko,
-            hamonikr-printer-drivers,
             hardinfo,                        
             htop,
             hypnotix,
             inkscape,
+            kodi,
             libreoffice,
             libreoffice-l10n-ko,
             libreoffice-help-ko,
@@ -97,6 +91,7 @@ Recommends: asbru-cm,
             nemo-emblems,
             nemo-filename-repairer,            
             nemo-image-converter,          
+            obs-studio,
             onboard,
             remmina,
             remmina-plugin-rdp,
@@ -127,6 +122,7 @@ Conflicts:
 Replaces:
 Depends: 
 Recommends: hamonikr-cli-tools,   
+            hamonikr-printer-drivers,
             live-usb-creator,
             convert-svg,
             hamonikr-checksum,            
@@ -169,7 +165,8 @@ Recommends: hamonikr-cli-tools,
             packaging-dev,
             virtualbox,
             virtualbox-ext-pack,
-            lutris
+            lutris,
+			asbru-cm
 Description: HamoniKR desktop environment
  하모니카OS 환경에서 소프트웨어를 개발하는 개발자를 위한
  여러가지 유용한 프로그램을 제공하는 패키지.

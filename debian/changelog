@@ -1,3 +1,10 @@
+hamonikr-meta (3.1.6) taebaek; urgency=medium
+
+  * Removed hamonikr-printer-drivers
+   - Cause too big size
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 26 Oct 2022 15:36:04 +0900
+ 
 hamonikr-meta (3.1.5) taebaek; urgency=medium
 
   * Add lutris in hamonikr-desktop-full
