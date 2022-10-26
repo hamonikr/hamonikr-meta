@@ -23,12 +23,11 @@ Depends: cinnamon-desktop-environment,
          hamonikr-plymouth-theme-hanla,
          hamonikr-upgrade-info
 Recommends: hamonikr-grub-theme,    
-            lollypop,
             celluloid,
             nimf,
             nimf-libhangul,   
             samba,
-            nemo-filename-repairer
+            numlockx            
 Description: HamoniKR desktop environment
  하모니카OS의 기본 환경을 구성하는 패키지.
 
@@ -38,28 +37,13 @@ Conflicts:
 Replaces:
 Depends: hamonikr-desktop-base
 Recommends: git,            
-            fonts-inconsolata,
-            gprename,
-            hamonikr-printer-drivers,
-            hamonikr-games,     
-            hamonikr-conky,  
             hamonikrreport,
             hamonikr-drive,
             hamonikr-backup,
-            hardinfo,            
-            hamonikr-nemo-rabbitvcs,
-            nemo-compare,
-            nemo-image-converter,
             language-pack-ko,
             language-pack-gnome-ko,
             nemo-share,     
-            neofetch,
-            numlockx,
-            stacer,
-            ventoy,
-            udpcast,
-            xpad,
-            vim
+            neofetch
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
 
@@ -70,16 +54,47 @@ Replaces:
 Depends: hamonikr-desktop-environment
 Recommends: asbru-cm,
             boot-select,
-            mainline,   
-            hamonikr-ff,    
-            nemo-emblems,
-            htop,
+            drawing,
             filezilla,
-            slack-desktop,
-            zoom,
+            fonts-nanum,
+            fonts-nanum-coding,
+            fonts-nanum-extra,
+            fonts-noto-cjk-extra,
             gimp, 
             gimp-help-ko,
-            inkscape
+            gprename,
+            hamonikr-conky,     
+            hamonikr-ff,    
+            hamonikr-fonts,           
+            hamonikr-games,     
+            hamonikr-nemo-rabbitvcs,     
+            hamonikr-onboard-layout-ko,
+            hamonikr-printer-drivers,
+            hardinfo,                        
+            htop,
+            hypnotix,
+            inkscape,
+            lollypop,            
+            mainline,   
+            nemo-compare,
+            nemo-emblems,
+            nemo-filename-repairer            
+            nemo-image-converter,          
+            onboard,
+            seahorse,
+            simple-scan,
+            slack-desktop,
+            stacer,
+            thunderbird,
+            transmission-gtk,         
+            udpcast,
+            ventoy,
+            vim,
+            virtualbox,
+            virtualbox-ext-pack,            
+            warpinator,
+            xpad,
+            zoom
 Description: HamoniKR desktop environment
  하모니카OS의 여러가지 유틸을 포함하는 패키지.
 
