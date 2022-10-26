@@ -1,3 +1,9 @@
+hamonikr-meta (3.1.2) taebaek; urgency=medium
+
+  * Change for Full edition
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 26 Oct 2022 13:20:50 +0900
+
 hamonikr-meta (3.1.1) taebaek; urgency=medium
 
   * Change for Basic, Full edition
