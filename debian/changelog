@@ -1,3 +1,10 @@
+hamonikr-meta (3.2.1) taebaek; urgency=medium
+
+  * Add mint-meta-codecs package
+   - required welcome and ubiquity
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 Oct 2022 13:12:39 +0900
+
 hamonikr-meta (3.2.0) taebaek; urgency=medium
 
   * Update for HamoniKR 6.0 Full Edition
