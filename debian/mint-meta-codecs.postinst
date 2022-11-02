@@ -19,9 +19,9 @@ set -e
 
 case "$1" in
     configure)
-	if [ -e /usr/share/applications/mint-meta-codecs.desktop ]
+	if [ -e /usr/share/applications/hamonikr-meta-codecs.desktop ]
 	then
-		rm -f /usr/share/applications/mint-meta-codecs.desktop
+		rm -f /usr/share/applications/hamonikr-meta-codecs.desktop
 	fi
 	if [ -x /usr/bin/update-desktop-database ]
 	then

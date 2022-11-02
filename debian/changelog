@@ -1,3 +1,12 @@
+hamonikr-meta (3.2.2) taebaek; urgency=medium
+
+  * Fix mint-meta-codecs postinst
+   - If installed, the mint-meta-codecs.desktop file is to be erased.
+   - However, the file in hamonikrwelcome is hamonikr-meta-codecs and cannot be erased.
+   - Name changed.
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 02 Nov 2022 12:14:23 +0900
+
 hamonikr-meta (3.2.1) taebaek; urgency=medium
 
   * Add mint-meta-codecs package
