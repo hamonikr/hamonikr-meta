@@ -1,3 +1,11 @@
+hamonikr-meta (3.2.5) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Update meta pacakge dependancy
+   - Causes changed minimal install case
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 07 Nov 2022 23:30:17 +0900
+
 hamonikr-meta (3.2.4) taebaek; urgency=medium
 
   [Kevin Kim]
