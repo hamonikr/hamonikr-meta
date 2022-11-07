@@ -53,6 +53,56 @@ Recommends: git,
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
 
+Package: hamonikr-desktop-minimal
+Architecture: all
+Conflicts:
+Replaces:
+Depends: hamonikr-desktop-base
+Recommends: boot-select,
+            celluloid,
+            drawing,
+            filezilla,
+            gimp,
+            gimp-help-ko,
+            git,         
+            glade,
+            hamonikr-conky,
+            hamonikr-nemo-rabbitvcs,
+            hardinfo,
+            htop,
+            hunspell-ko,
+            hypnotix,
+            language-pack-gnome-ko,
+            language-pack-ko,
+            lollypop,            
+            mainline,
+            naver-whale-stable,
+            nemo-compare,
+            nemo-emblems,
+            nemo-filename-repairer,
+            nemo-image-converter,
+            nemo-share,     
+            neofetch,
+            neofetch,
+            remmina,
+            remmina-plugin-rdp,
+            remmina-plugin-secret,
+            remmina-plugin-spice,
+            remmina-plugin-vnc,
+            samba,
+            seahorse,
+            shutter,
+            simple-scan,
+            stacer,
+            thunderbird,
+            thunderbird-locale-ko,
+            vim,
+            warpinator,
+            xpad,
+            xrdp
+Description: HamoniKR desktop environment
+ 하모니카OS의 전체 환경을 구성하는 패키지.
+
 Package: hamonikr-desktop-full
 Architecture: all
 Conflicts:

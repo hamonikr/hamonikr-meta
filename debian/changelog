@@ -1,3 +1,11 @@
+hamonikr-meta (3.2.4) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Create meta package for tasksel
+   - hamonikr-desktop-minimal, hamonikr-desktop-full
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 05 Nov 2022 01:24:28 +0900
+
 hamonikr-meta (3.2.3) taebaek; urgency=medium
 
   [Kevin Kim]
