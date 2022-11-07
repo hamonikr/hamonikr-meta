@@ -210,7 +210,7 @@ Recommends: binwalk,
             vim,
             virt-manager,
             virt-viewer,
-            virtualbox,libreoffice-base
+            virtualbox,
             virtualbox-ext-pack,
             xclip,
             xorriso,
