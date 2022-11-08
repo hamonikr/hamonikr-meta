@@ -1,3 +1,11 @@
+hamonikr-meta (3.2.7) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Update hamonikr-desktop-minimal dependancy
+   - remove lollypop in minimal
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Nov 2022 14:36:32 +0900
+
 hamonikr-meta (3.2.6) taebaek; urgency=medium
 
   [Kevin Kim]
