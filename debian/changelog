@@ -1,3 +1,11 @@
+hamonikr-meta (3.2.9) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Update hamonikr-desktop-full dependancy
+   - Remove kdenlive for KDE environment
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 10 Nov 2022 01:12:29 +0900
+
 hamonikr-meta (3.2.8) taebaek; urgency=medium
 
   [Kevin Kim]
