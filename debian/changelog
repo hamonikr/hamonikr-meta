@@ -1,3 +1,14 @@
+hamonikr-meta (3.2.8) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Update hamonikr-desktop-full dependancy
+   - Add balena-etcher (USB creator)
+   - Add gprename (bulk rename tool)
+   - Add kazam (Screen recoding)
+   - Add kdenlive (Video editor)
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 10 Nov 2022 00:52:37 +0900
+
 hamonikr-meta (3.2.7) taebaek; urgency=medium
 
   [Kevin Kim]
