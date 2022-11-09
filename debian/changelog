@@ -1,3 +1,10 @@
+hamonikr-meta (3.3.0) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Add hamonikr-backgrounds-taebaek
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 10 Nov 2022 02:37:07 +0900
+
 hamonikr-meta (3.2.9) taebaek; urgency=medium
 
   [Kevin Kim]
