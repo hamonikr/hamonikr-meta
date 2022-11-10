@@ -1,3 +1,10 @@
+hamonikr-meta (3.3.1) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Add gnome-clocks
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 10 Nov 2022 10:28:39 +0900
+
 hamonikr-meta (3.3.0) taebaek; urgency=medium
 
   [Kevin Kim]
