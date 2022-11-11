@@ -1,3 +1,12 @@
+hamonikr-meta (3.3.2) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Add apt-hamonikr-taebaek meta package
+   - Using hamonikr apt setup on Ubuntu
+   - Add setup_whale, setup_chrome, setup_vscode
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 11 Nov 2022 17:47:17 +0900
+
 hamonikr-meta (3.3.1) taebaek; urgency=medium
 
   [Kevin Kim]

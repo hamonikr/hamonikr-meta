@@ -1,0 +1,307 @@
+#!/usr/bin/env bash
+#
+# Copyright HamoniKR Project. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for license information.
+
+print_status() {
+    echo
+    echo "## $1"
+    echo
+}
+
+bail() {
+    echo 'Error executing command, exiting'
+    exit 1
+}
+
+exec_cmd_nobail() {
+    echo "+ $1"
+    bash -c "$1"
+}
+
+exec_cmd() {
+    exec_cmd_nobail "$1" || bail
+}
+
+setup_hamonikr() {
+
+    DistributorID=$(lsb_release -i -s)
+    RELEASE=$(lsb_release -d -s)
+    CODENAME=$(lsb_release -c -s)
+
+    if [[ -f "/etc/apt/sources.list.d/hamonikr.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/hamonikr.list"
+    fi
+
+    if [[ -f "/etc/apt/sources.list.d/hamonikr-pkg.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/hamonikr-pkg.list"
+    fi
+
+    if [[ -f "/etc/apt/sources.list.d/hamonikr-app.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/hamonikr-app.list"
+    fi
+
+    eval $(apt-config shell APT_SOURCE_PARTS Dir::Etc::sourceparts/d)
+    HAMONIKR_SOURCE_PART=${APT_SOURCE_PARTS}hamonikr.list
+
+    eval $(apt-config shell APT_TRUSTED_PARTS Dir::Etc::trustedparts/d)
+    HAMONIKR_TRUSTED_PART=${APT_TRUSTED_PARTS}hamonikr.gpg
+
+    if [ ! -f $HAMONIKR_TRUSTED_PART ] && [ -x /usr/bin/gpg ] ; then
+        KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=jMj1
+-----END PGP PUBLIC KEY BLOCK-----"
+    
+    echo "$KEY" | gpg --dearmor > $HAMONIKR_TRUSTED_PART   
+
+    fi
+
+    case "$CODENAME" in
+        # Ubuntu 20.04, linuxmint 20.3
+        taebaek|hanla|jin|bionic|focal|groovy|hirsute|impish|una|uma|ulyssa|ulyana|tricia|tina|tara)
+            echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" > $HAMONIKR_SOURCE_PART
+            echo "deb [arch=amd64] https://update.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
+            echo "#deb-src [arch=amd64] https://update.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
+
+            print_status "Added https://update.hamonikr.org repository"
+        ;;
+        # Ubuntu 22.04, linuxmint 21
+        jammy|vanessa)
+            echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" > $HAMONIKR_SOURCE_PART
+            echo "deb [arch=amd64] https://repo.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
+            echo "#deb-src [arch=amd64] https://repo.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
+
+            print_status "Added https://repo.hamonikr.org repository"
+        ;;        
+        *)
+        ;;
+    esac
+}
+
+setup_whale() {
+
+    if [[ -f "/etc/apt/sources.list.d/naver-whale.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/naver-whale.list"
+    fi
+
+    eval $(apt-config shell APT_SOURCE_PARTS Dir::Etc::sourceparts/d)
+    WHALE_SOURCE_PART=${APT_SOURCE_PARTS}naver-whale.list
+
+    eval $(apt-config shell APT_TRUSTED_PARTS Dir::Etc::trustedparts/d)
+    WHALE_TRUSTED_PART=${APT_TRUSTED_PARTS}whale-key.gpg
+
+    if [ ! -f $WHALE_TRUSTED_PART ] && [ -x /usr/bin/gpg ] ; then
+        KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+YaYOOaYifGTSoA==
+=a5Es
+-----END PGP PUBLIC KEY BLOCK-----"
+    
+    echo "$KEY" | gpg --dearmor > $WHALE_TRUSTED_PART   
+
+    fi
+
+    # ADD APT
+    echo "deb [arch=amd64] http://repo.whale.naver.com/stable/deb stable main" >> $WHALE_SOURCE_PART
+
+    print_status "Added http://repo.whale.naver.com/stable/deb repository"
+
+}
+
+setup_vscode() {
+
+    if [[ -f "/etc/apt/sources.list.d/vscode.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/vscode.list"
+    fi
+
+    eval $(apt-config shell APT_SOURCE_PARTS Dir::Etc::sourceparts/d)
+    CODE_SOURCE_PART=${APT_SOURCE_PARTS}vscode.list
+
+    eval $(apt-config shell APT_TRUSTED_PARTS Dir::Etc::trustedparts/d)
+    CODE_TRUSTED_PART=${APT_TRUSTED_PARTS}microsoft.gpg
+
+    if [ ! -f $CODE_TRUSTED_PART ] && [ -x /usr/bin/gpg ] ; then
+        KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.7 (GNU/Linux)
+
+mQENBFYxWIwBCADAKoZhZlJxGNGWzqV+1OG1xiQeoowKhssGAKvd+buXCGISZJwT
+LXZqIcIiLP7pqdcZWtE9bSc7yBY2MalDp9Liu0KekywQ6VVX1T72NPf5Ev6x6DLV
+7aVWsCzUAF+eb7DC9fPuFLEdxmOEYoPjzrQ7cCnSV4JQxAqhU4T6OjbvRazGl3ag
+OeizPXmRljMtUUttHQZnRhtlzkmwIrUivbfFPD+fEoHJ1+uIdfOzZX8/oKHKLe2j
+H632kvsNzJFlROVvGLYAk2WRcLu+RjjggixhwiB+Mu/A8Tf4V6b+YppS44q8EvVr
+M+QvY7LNSOffSO6Slsy9oisGTdfE39nC7pVRABEBAAG0N01pY3Jvc29mdCAoUmVs
+ZWFzZSBzaWduaW5nKSA8Z3Bnc2VjdXJpdHlAbWljcm9zb2Z0LmNvbT6JATUEEwEC
+AB8FAlYxWIwCGwMGCwkIBwMCBBUCCAMDFgIBAh4BAheAAAoJEOs+lK2+EinPGpsH
+/32vKy29Hg51H9dfFJMx0/a/F+5vKeCeVqimvyTM04C+XENNuSbYZ3eRPHGHFLqe
+MNGxsfb7C7ZxEeW7J/vSzRgHxm7ZvESisUYRFq2sgkJ+HFERNrqfci45bdhmrUsy
+7SWw9ybxdFOkuQoyKD3tBmiGfONQMlBaOMWdAsic965rvJsd5zYaZZFI1UwTkFXV
+KJt3bp3Ngn1vEYXwijGTa+FXz6GLHueJwF0I7ug34DgUkAFvAs8Hacr2DRYxL5RJ
+XdNgj4Jd2/g6T9InmWT0hASljur+dJnzNiNCkbn9KbX7J/qK1IbR8y560yRmFsU+
+NdCFTW7wY0Fb1fWJ+/KTsC4=
+=J6gs
+-----END PGP PUBLIC KEY BLOCK-----"
+    
+    echo "$KEY" | gpg --dearmor > $CODE_TRUSTED_PART   
+
+    fi
+
+    # ADD APT
+    echo "deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main" >> $CODE_SOURCE_PART
+
+    print_status "Added http://packages.microsoft.com/repos/code repository"
+
+}
+
+setup_chrome() {
+
+    if [[ -f "/etc/apt/sources.list.d/google-chrome.list" ]]; then
+        exec_cmd "rm -f /etc/apt/sources.list.d/google-chrome.list"
+    fi
+
+    eval $(apt-config shell APT_SOURCE_PARTS Dir::Etc::sourceparts/d)
+    CHROME_SOURCE_PART=${APT_SOURCE_PARTS}google-chrome.list
+
+    eval $(apt-config shell APT_TRUSTED_PARTS Dir::Etc::trustedparts/d)
+    CHROME_TRUSTED_PART=${APT_TRUSTED_PARTS}google-chrome.gpg
+
+    if [ ! -f $CHROME_TRUSTED_PART ] && [ -x /usr/bin/gpg ] ; then
+        KEY="-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQGiBEXwb0YRBADQva2NLpYXxgjNkbuP0LnPoEXruGmvi3XMIxjEUFuGNCP4Rj/a
+kv2E5VixBP1vcQFDRJ+p1puh8NU0XERlhpyZrVMzzS/RdWdyXf7E5S8oqNXsoD1z
+fvmI+i9b2EhHAA19Kgw7ifV8vMa4tkwslEmcTiwiw8lyUl28Wh4Et8SxzwCggDcA
+feGqtn3PP5YAdD0km4S4XeMEAJjlrqPoPv2Gf//tfznY2UyS9PUqFCPLHgFLe80u
+QhI2U5jt6jUKN4fHauvR6z3seSAsh1YyzyZCKxJFEKXCCqnrFSoh4WSJsbFNc4PN
+b0V0SqiTCkWADZyLT5wll8sWuQ5ylTf3z1ENoHf+G3um3/wk/+xmEHvj9HCTBEXP
+78X0A/0Tqlhc2RBnEf+AqxWvM8sk8LzJI/XGjwBvKfXe+l3rnSR2kEAvGzj5Sg0X
+4XmfTg4Jl8BNjWyvm2Wmjfet41LPmYJKsux3g0b8yzQxeOA4pQKKAU3Z4+rgzGmf
+HdwCG5MNT2A5XxD/eDd+L4fRx0HbFkIQoAi1J3YWQSiTk15fw7RMR29vZ2xlLCBJ
+bmMuIExpbnV4IFBhY2thZ2UgU2lnbmluZyBLZXkgPGxpbnV4LXBhY2thZ2VzLWtl
+eW1hc3RlckBnb29nbGUuY29tPohjBBMRAgAjAhsDBgsJCAcDAgQVAggDBBYCAwEC
+HgECF4AFAkYVdn8CGQEACgkQoECDD3+sWZHKSgCfdq3HtNYJLv+XZleb6HN4zOcF
+AJEAniSFbuv8V5FSHxeRimHx25671az+uQINBEXwb0sQCACuA8HT2nr+FM5y/kzI
+A51ZcC46KFtIDgjQJ31Q3OrkYP8LbxOpKMRIzvOZrsjOlFmDVqitiVc7qj3lYp6U
+rgNVaFv6Qu4bo2/ctjNHDDBdv6nufmusJUWq/9TwieepM/cwnXd+HMxu1XBKRVk9
+XyAZ9SvfcW4EtxVgysI+XlptKFa5JCqFM3qJllVohMmr7lMwO8+sxTWTXqxsptJo
+pZeKz+UBEEqPyw7CUIVYGC9ENEtIMFvAvPqnhj1GS96REMpry+5s9WKuLEaclWpd
+K3krttbDlY1NaeQUCRvBYZ8iAG9YSLHUHMTuI2oea07Rh4dtIAqPwAX8xn36JAYG
+2vgLAAMFB/wKqaycjWAZwIe98Yt0qHsdkpmIbarD9fGiA6kfkK/UxjL/k7tmS4Vm
+CljrrDZkPSQ/19mpdRcGXtb0NI9+nyM5trweTvtPw+HPkDiJlTaiCcx+izg79Fj9
+KcofuNb3lPdXZb9tzf5oDnmm/B+4vkeTuEZJ//IFty8cmvCpzvY+DAz1Vo9rA+Zn
+cpWY1n6z6oSS9AsyT/IFlWWBZZ17SpMHu+h4Bxy62+AbPHKGSujEGQhWq8ZRoJAT
+G0KSObnmZ7FwFWu1e9XFoUCt0bSjiJWTIyaObMrWu/LvJ3e9I87HseSJStfw6fki
+5og9qFEkMrIrBCp3QGuQWBq/rTdMuwNFiEkEGBECAAkFAkXwb0sCGwwACgkQoECD
+D3+sWZF/WACfeNAu1/1hwZtUo1bR+MWiCjpvHtwAnA1R3IHqFLQ2X3xJ40XPuAyY
+/FJG
+=Quqp
+-----END PGP PUBLIC KEY BLOCK-----"
+    
+    echo "$KEY" | gpg --dearmor > $CHROME_TRUSTED_PART   
+
+    fi
+
+    # ADD APT
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> $CHROME_SOURCE_PART
+
+    print_status "Added http://dl.google.com/linux/chrome/deb/ repository"
+
+}
+
+setup_hamonikr
+setup_whale
+setup_chrome
+setup_vscode

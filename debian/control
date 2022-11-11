@@ -212,3 +212,12 @@ Architecture: all
 Depends: cabextract, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-vaapi, libdvdcss2, libdvdnav4, libdvdread7, unrar, unshield
 Description: All the packages required for multimedia support in Linux Mint.
  All the packages required for multimedia support in Linux Mint.
+
+Package: apt-hamonikr-taebaek
+Architecture: all
+Conflicts: 
+Replaces: 
+Depends: 
+Recommends: 
+Description: HamoniKR APT Repository
+ 하모니카 OS taebak 저장소 환경을 구성하는 패키지.
