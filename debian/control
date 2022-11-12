@@ -213,7 +213,7 @@ Depends: cabextract, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-
 Description: All the packages required for multimedia support in Linux Mint.
  All the packages required for multimedia support in Linux Mint.
 
-Package: apt-hamonikr-taebaek
+Package: hamonikr-taebaek-repo
 Architecture: all
 Conflicts: 
 Replaces: 

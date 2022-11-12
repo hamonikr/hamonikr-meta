@@ -116,8 +116,10 @@ Tzr8nlWo8LdZB9DL7r25gXcLcSk1jedLRJZUAWAIdj/kgSLWkievkiSCc8w=
         # Ubuntu 22.04, linuxmint 21
         jammy|vanessa)
             echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" > $HAMONIKR_SOURCE_PART
-            echo "deb [arch=amd64] https://repo.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
-            echo "#deb-src [arch=amd64] https://repo.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
+            echo "deb [arch=amd64] https://repo.hamonikr.org kumkang main extra" > $HAMONIKR_SOURCE_PART
+            echo "#deb-src [arch=amd64] https://repo.hamonikr.org kumkang main extra" >> $HAMONIKR_SOURCE_PART
+            echo "deb [arch=amd64] https://repo.hamonikr.org jammy main extra" >> $HAMONIKR_SOURCE_PART
+            echo "#deb-src [arch=amd64] https://repo.hamonikr.org jammy main extra" >> $HAMONIKR_SOURCE_PART            
 
             print_status "Added https://repo.hamonikr.org repository"
         ;;        
