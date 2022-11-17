@@ -1,3 +1,11 @@
+hamonikr-meta (3.3.5) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Update mint-meta-codecs
+   - Support for LDME 5
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 18 Nov 2022 00:05:00 +0900
+
 hamonikr-meta (3.3.4) taebaek; urgency=medium
 
   [Kevin Kim]

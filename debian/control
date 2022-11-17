@@ -224,7 +224,7 @@ Description: HamoniKR desktop environment
 
 Package: mint-meta-codecs
 Architecture: all
-Depends: cabextract, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-vaapi, libdvdcss2, libdvdnav4, libdvdread7, unrar, unshield
+Depends: cabextract, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-vaapi, libdvdcss2, libdvdnav4, libdvdread7 | libdvdread8, unrar, unshield
 Description: All the packages required for multimedia support in Linux Mint.
  All the packages required for multimedia support in Linux Mint.
 
