@@ -1,9 +1,10 @@
-## Install
+## hamonikr-meta
 
-하모니카OS 데스크톱 환경을 구성하는 메타 패키지로 아래 2가지가 있습니다.
+하모니카OS 데스크톱 환경을 구성하는 메타 패키지로 아래와 같이 제공됩니다.
 
+- 하모니카OS 기본 환경을 구성하는 패키지 : `hamonikr-desktop-minimal`
 - 하모니카OS 전체 기능을 포함한 패키지 : `hamonikr-desktop-environment`
-- 하모니카OS 기본 환경을 구성하는 패키지 : `hamonikr-desktop-base`
+
 
 그 외 추가적으로 아래의 패키지가 제공됩니다.
 
@@ -15,7 +16,10 @@
 
     `hamonikr-cli-tools, filezilla, slack-desktop, zoom, gimp, inkscape, gh, github-desktop 등`
 
-### HamoniKR (>=5.0)
+
+## Ubuntu (>=20.04), LMDE 5, Debian (bullseye) 에서 하모니카 데스크톱 환경을 사용하는법
+
+우분투 및 데비안 계열에서 다음과 같이 하모니카 환경을 사용할 수 있습니다.
 
 ```
 wget -qO- https://update.hamonikr.org/add-update-repo.apt | sudo -E bash -
@@ -24,17 +28,15 @@ sudo apt-get install hamonikr-desktop-environment
 
 ```
 
-### Ubuntu (>=20.04)
 
-시나몬 데스크톱 매니저를 사용하지 않는 경우에는 다음과 같이 먼저 시나몬 데스크톱을 설치해야 합니다.
-
+## HamoniKR 5.0 사용자는 다음과 같이 저장소를 추가하고 사용할 수 있습니다.
 ```
 wget -qO- https://update.hamonikr.org/add-update-repo.apt | sudo -E bash -
 
-# 시나몬 환경 설치
-sudo apt-get install cinnamon-desktop-environment
-
-# 하모니카OS 데스크톱 환경 설치
 sudo apt-get install hamonikr-desktop-environment
 
 ```
+
+
+
+
