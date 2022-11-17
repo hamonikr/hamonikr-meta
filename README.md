@@ -17,7 +17,7 @@
     `hamonikr-cli-tools, filezilla, slack-desktop, zoom, gimp, inkscape, gh, github-desktop 등`
 
 
-## Ubuntu (>=20.04), LMDE 5, Debian (bullseye) 에서 하모니카 데스크톱 환경을 사용하는법
+## Ubuntu (20.04), LMDE 5, Debian (bullseye) 에서 하모니카 데스크톱 환경을 사용하는법
 
 우분투 및 데비안 계열에서 다음과 같이 하모니카 환경을 사용할 수 있습니다.
 
