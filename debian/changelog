@@ -1,3 +1,11 @@
+hamonikr-meta (3.3.6) taebaek; urgency=medium
+
+  [Kevin Kim]
+  * Fixed google chrome gpg key
+   - Support for LDME 5
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 02 Dec 2022 12:12:13 +0900
+
 hamonikr-meta (3.3.5) taebaek; urgency=medium
 
   [Kevin Kim]
