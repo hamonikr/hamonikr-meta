@@ -1,3 +1,10 @@
+hamonikr-meta (3.4.0) kumkang; urgency=medium
+
+  [Kevin Kim]
+  * Update package list for Ubuntu 22.04 environment
+
+  -- HamoniKR <pkg@hamonikr.org>  Tue, 19 Sep 2023 15:07:51 +0900
+
 hamonikr-meta (3.3.7) taebaek; urgency=medium
 
   [James Bae]
