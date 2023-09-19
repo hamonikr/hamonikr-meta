@@ -3,7 +3,7 @@ hamonikr-meta (3.4.0) kumkang; urgency=medium
   [Kevin Kim]
   * Update package list for Ubuntu 22.04 environment
 
-  -- HamoniKR <pkg@hamonikr.org>  Tue, 19 Sep 2023 15:07:51 +0900
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 19 Sep 2023 15:07:51 +0900
 
 hamonikr-meta (3.3.7) taebaek; urgency=medium
 
@@ -11,7 +11,7 @@ hamonikr-meta (3.3.7) taebaek; urgency=medium
   * Add hamonikr-desktop-base-debian
   * Add hamonikr-desktop-minimal-debian
 
-  -- HamoniKR <pkg@hamonikr.org>  Tue, 27 Dec 2022 11:19:09 +0900
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 27 Dec 2022 11:19:09 +0900
 
 hamonikr-meta (3.3.6) taebaek; urgency=medium
 
