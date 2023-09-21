@@ -64,7 +64,7 @@ Recommends: asbru-cm,
             nemo-image-converter,
             nemo-share,     
             neofetch,
-            numlockx            
+            numlockx,           
             samba,
             shutter,            
             stacer,
