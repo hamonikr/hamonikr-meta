@@ -107,8 +107,8 @@ Tzr8nlWo8LdZB9DL7r25gXcLcSk1jedLRJZUAWAIdj/kgSLWkievkiSCc8w=
             echo "deb [arch=amd64] https://update.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
             echo "#deb-src [arch=amd64] https://update.hamonikr.org taebaek main extra" >> $HAMONIKR_SOURCE_PART
         ;;
-        # ubuntu 22.04, linuxmint 21
-        jammy|vanessa)
+        # ubuntu 22.04, linuxmint 21, linuxmint 21.1, linuxmint 21.2 
+        jammy|vanessa|vera|victoria)
             echo "### THIS FILE IS AUTOMATICALLY CONFIGURED ###" > $HAMONIKR_SOURCE_PART
             echo "deb [arch=amd64] https://repo.hamonikr.org jammy main extra" >> $HAMONIKR_SOURCE_PART
             echo "#deb-src [arch=amd64] https://repo.hamonikr.org jammy main extra" >> $HAMONIKR_SOURCE_PART
