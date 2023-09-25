@@ -1,3 +1,10 @@
+hamonikr-meta (3.4.2) stable; urgency=medium
+
+  [Kevin Kim]
+  * Add libreoffice-hwp2odt
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 25 Sep 2023 13:40:46 +0900
+
 hamonikr-meta (3.4.1) kumkang; urgency=medium
 
   [Kevin Kim]
