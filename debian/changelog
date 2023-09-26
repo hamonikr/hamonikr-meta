@@ -1,3 +1,10 @@
+hamonikr-meta (3.4.3) stable; urgency=medium
+
+  [Kevin Kim]
+  * Add ukui-greeter
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 26 Sep 2023 13:09:15 +0900
+
 hamonikr-meta (3.4.2) stable; urgency=medium
 
   [Kevin Kim]
