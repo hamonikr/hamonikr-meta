@@ -1,3 +1,11 @@
+hamonikr-meta (3.4.5) stable; urgency=medium
+
+  [Kevin Kim]
+  * Updated ubuntu-hamonikr-respin dependency
+   - Added hamonikr-stylish-icon
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 28 Sep 2023 15:12:26 +0900
+
 hamonikr-meta (3.4.4) stable; urgency=medium
 
   [Kevin Kim]
