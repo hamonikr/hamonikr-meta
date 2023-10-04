@@ -1,3 +1,11 @@
+hamonikr-meta (3.4.6) stable; urgency=medium
+
+  [Kevin Kim]
+  * Merge hamonikr-games pacakge
+   - Cause that pacakge is only include meta data
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 04 Oct 2023 12:56:54 +0900
+
 hamonikr-meta (3.4.5) stable; urgency=medium
 
   [Kevin Kim]

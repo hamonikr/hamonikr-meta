@@ -179,6 +179,7 @@ Recommends: lollypop,
             hamonikr-fonts,
             hamonikr-games,
             hamonikr-nemo-rabbitvcs,
+            hamonikr-cli-tools,               
             hardinfo,
             htop,
             hypnotix,
@@ -335,3 +336,16 @@ Recommends: celluloid,
             samba
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
+
+Package: hamonikr-games
+Architecture: all
+Depends: 
+Recommends: aisleriot,
+            gnome-mahjongg,
+            gnome-mines,
+            gnome-sudoku,
+            hanme-taja,
+            iagno,
+            swell-foop
+Description: basic games meta package
+ 하모니카 리눅스에서 기본 게임들을 모아놓은 메타패키지 
