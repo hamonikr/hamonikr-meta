@@ -1,3 +1,12 @@
+hamonikr-meta (3.4.7) stable; urgency=medium
+
+  [Kevin Kim]
+  * Changed to be consistent with other package names
+   - hamonikrreport to hamonikr-report
+   - hamonikrwelcome to hamonikr-welcome
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 04 Oct 2023 14:44:08 +0900
+
 hamonikr-meta (3.4.6) stable; urgency=medium
 
   [Kevin Kim]
