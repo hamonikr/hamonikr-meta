@@ -1,3 +1,12 @@
+hamonikr-meta (3.4.8) stable; urgency=medium
+
+  [Kevin Kim]
+  * Update hamonikr-desktop-environment
+   - Add hamonikr-conky for welcome screen
+   - Add code as default
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 06 Oct 2023 16:50:21 +0900
+
 hamonikr-meta (3.4.7) stable; urgency=medium
 
   [Kevin Kim]
