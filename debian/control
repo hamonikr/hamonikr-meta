@@ -371,6 +371,15 @@ Recommends: aisleriot,
 Description: basic games meta package
  하모니카 리눅스에서 기본 게임들을 모아놓은 메타패키지 
 
+Package: mint-artwork
+Architecture: all
+Depends: mint-backgrounds-victoria, mint-themes | mint-themes-legacy, mint-x-icons, mint-y-icons, mint-cursor-themes
+Conflicts: mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-common, mint-artwork-cinnamon, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce, ldm-mint-theme
+Replaces: mint-artwork-debian, mint-artwork-debian-cinnamon, mint-artwork-debian-mate, mint-artwork-common, mint-artwork-cinnamon, mint-artwork-gnome, mint-artwork-mate, mint-artwork-xfce, mint-backgrounds-xfce, ldm-mint-theme
+Provides: mint-mate-default-settings
+Description: Linux Mint Artwork and Resources
+ Linux Mint Artwork and Resources.
+
 Package: mint-themes
 Replaces: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
 Conflicts: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
