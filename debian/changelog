@@ -1,3 +1,10 @@
+hamonikr-meta (3.5.3) stable; urgency=medium
+
+  [Kevin Kim]
+  * Added postinst in mint-artwork
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 07 Oct 2023 18:33:22 +0900
+
 hamonikr-meta (3.5.2) stable; urgency=medium
 
   [Kevin Kim]

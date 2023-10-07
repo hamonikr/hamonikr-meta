@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# Copyright HamoniKR Project. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+if [[ -f "/etc/lightdm/lightdm-gtk-greeter.conf.d/99_linuxmint.conf" ]]; then
+    rm -frv /etc/lightdm/lightdm-gtk-greeter.conf.d/99_linuxmint.conf
+fi
+
+if [[ -f "/etc/X11/Xsession.d/99mint" ]]; then
+    rm -frv /etc/X11/Xsession.d/99mint
+fi
