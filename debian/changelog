@@ -1,3 +1,11 @@
+hamonikr-meta (3.5.1) stable; urgency=medium
+
+  [Kevin Kim]
+  * Added empty mint package
+   - Add empty mint-l-theme, mint-l-icons
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 07 Oct 2023 18:16:25 +0900
+
 hamonikr-meta (3.5.0) stable; urgency=medium
 
   [Kevin Kim]

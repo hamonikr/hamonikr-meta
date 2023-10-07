@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Copyright HamoniKR Project. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+if [[ -d "/usr/share/icons/Mint-L" ]]; then
+    rm -frv /usr/share/icons/Mint-L*
+fi

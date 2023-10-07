@@ -379,6 +379,20 @@ Architecture: all
 Description: Mint themes
  A collection of mint themes.
 
+Package: mint-l-theme
+Replaces: 
+Conflicts: 
+Depends: mint-l-icons
+Architecture: all
+Description: Mint themes
+ A collection of mint themes.
+
+Package: mint-l-icons
+Architecture: all
+Description: Mint-Y icon theme
+ A flat, colorful, and modern theme based on
+ Paper and Moka.
+
 Package: mint-x-icons
 Architecture: all
 Description: Mint-X icon theme
