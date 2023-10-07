@@ -370,3 +370,24 @@ Recommends: aisleriot,
             swell-foop
 Description: basic games meta package
  하모니카 리눅스에서 기본 게임들을 모아놓은 메타패키지 
+
+Package: mint-themes
+Replaces: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Conflicts: mint-clearloox-theme, mint-x-theme, mint-y-theme, mint-z-theme, mint-themes-gtk3, cinnamon-themes
+Depends: ${misc:Depends}, mint-x-icons, mint-y-icons
+Architecture: all
+Description: Mint themes
+ A collection of mint themes.
+
+Package: mint-x-icons
+Architecture: all
+Description: Mint-X icon theme
+ A flat, colorful, and modern theme based on
+ Paper and Moka.
+
+Package: mint-y-icons
+Architecture: all
+Description: Mint-Y icon theme
+ A flat, colorful, and modern theme based on
+ Paper and Moka.
+
