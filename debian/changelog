@@ -1,3 +1,11 @@
+hamonikr-meta (3.5.4) stable; urgency=medium
+
+  [Kevin Kim]
+  * Add useful packages
+   - code, chrome, slack-desktop, zoom, lutris... in desktop-environment
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 09 Oct 2023 16:26:47 +0900
+
 hamonikr-meta (3.5.3) stable; urgency=medium
 
   [Kevin Kim]
