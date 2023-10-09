@@ -158,6 +158,7 @@ Recommends: apt-file,
             tigervnc-xorg-extension,
             xrdp,
             xpad,
+            wajig,
             zoom
 Description: HamoniKR desktop environment
  하모니카OS의 데스크톱 환경을 구성하는 패키지.
