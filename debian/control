@@ -86,8 +86,6 @@ Depends: hamonikr-desktop-base
 Recommends: apt-file,
             apt-rdepends,
             asbru-cm,
-            alzip,
-            ahnlab-v3lite,
             balena-etcher,
             boot-select,
             celluloid,
