@@ -16,7 +16,7 @@ Depends: cinnamon-desktop-environment,
          hamonikr-keyring,
          hamonikr-zsh,
          hamonikr-upgrade-info
-Recommends: hamonikr-grub-theme,    
+Recommends: grub2-theme-kumkang-dark,    
             nimf,
             nimf-libhangul,   
             numlockx            
@@ -43,7 +43,7 @@ Recommends: asbru-cm,
             hamonikr-backgrounds,     
             hamonikr-backup,
             hamonikr-drive,
-            hamonikr-grub-theme,    
+            grub2-theme-kumkang-dark,    
             hamonikr-help,
             hamonikr-icons,
             hamonikr-stylish-icon,         
@@ -338,7 +338,7 @@ Depends: albert,
          hamonikr-keyring,
          hamonikr-zsh,
          hamonikr-upgrade-info
-Recommends: hamonikr-grub-theme,    
+Recommends: grub2-theme-kumkang-dark,    
             nimf,
             nimf-libhangul,   
             numlockx            
@@ -423,3 +423,8 @@ Description: Mint-Y icon theme
  A flat, colorful, and modern theme based on
  Paper and Moka.
 
+Package: mint-cursor-themes
+Architecture: all
+Description: Mint Cursor theme
+ A flat, colorful, and modern theme based on
+ Paper and Moka.
