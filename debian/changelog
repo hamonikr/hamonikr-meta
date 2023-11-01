@@ -1,3 +1,10 @@
+hamonikr-meta (3.6.2) stable; urgency=medium
+
+  [Kevin Kim]
+  * Add meta package for upgrade from taebaek
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 01 Nov 2023 16:57:13 +0900
+
 hamonikr-meta (3.6.1) stable; urgency=medium
 
   [Kevin Kim]
