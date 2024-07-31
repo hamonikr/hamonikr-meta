@@ -1,3 +1,10 @@
+hamonikr-meta (3.7.0) unstable; urgency=medium
+
+  [Kevin Kim]
+  * Release for ubuntu 24.04 noble
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 31 Jul 2024 17:36:11 +0900
+
 hamonikr-meta (3.6.2) stable; urgency=medium
 
   [Kevin Kim]

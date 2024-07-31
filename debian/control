@@ -47,7 +47,7 @@ Recommends: asbru-cm,
             hamonikr-stylish-icon,         
             hamonikr-nemo-rabbitvcs,
             hamonikr-onboard-layout-ko,                
-            plymouth-theme-kumkang,
+            plymouth-theme-hamonikr,
             hamonikr-themes,
             hamonikr-report,
             hamonikr-welcome,            
@@ -93,7 +93,7 @@ Recommends: apt-file,
             glade,
             gnome-clocks,
             gprename,
-            grub2-theme-kumkang-dark,
+            grub2-theme-dark,
             hamonikr-backgrounds,
             hamonikr-backup,
             hamonikr-conky,
@@ -102,10 +102,9 @@ Recommends: apt-file,
             hamonikr-fonts,
             hamonikr-games,
             hamonikr-help,
-            hamonikr-icons,
             hamonikr-nemo-rabbitvcs,
             hamonikr-onboard-layout-ko,
-            plymouth-theme-kumkang,
+            plymouth-theme-hamonikr,
             hamonikr-report,
             hamonikr-stylish-icon,
             hamonikr-themes,
@@ -135,7 +134,7 @@ Recommends: apt-file,
             thunderbird-locale-ko,
             tigervnc-standalone-server,
             tigervnc-xorg-extension,
-            transmission-gtk,
+            transmission-qt,
             ubiquity-slideshow-mint,
             ukui-greeter,
             ventoy,
@@ -164,10 +163,8 @@ Recommends: celluloid,
             hamonikr-backup,
             hamonikr-drive,
             hamonikr-help,
-            hamonikr-icons,
             hamonikr-onboard-layout-ko,
             plymouth-theme-kumkang,
-            hamonikr-stylish-icon,
             hamonikr-themes,
             hamonikr-report,
             hamonikr-welcome,
@@ -318,14 +315,14 @@ Depends: cabextract, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-
 Description: All the packages required for multimedia support in Linux Mint.
  All the packages required for multimedia support in Linux Mint.
 
-Package: hamonikr-taebaek-repo
+Package: hamonikr-repo
 Architecture: all
 Conflicts: 
 Replaces: 
 Depends: 
 Recommends: 
 Description: HamoniKR APT Repository
- 하모니카 OS taebak 저장소 환경을 구성하는 패키지.
+ 하모니카 OS 저장소 환경을 구성하는 패키지.
 
 Package: hamonikr-desktop-base-debian
 Architecture: all
@@ -428,7 +425,7 @@ Description: Mint Cursor theme
  A flat, colorful, and modern theme based on
  Paper and Moka.
 
-Package: hamonikr-kumkang-apps
+Package: hamonikr-main-apps
 Architecture: all
 Conflicts:
 Replaces:

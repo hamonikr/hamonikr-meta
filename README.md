@@ -1,13 +1,17 @@
+![x86_64](https://img.shields.io/badge/amd64-darkblue)
+![ubuntu](https://img.shields.io/badge/ubuntu->=20.04-orange)
+![debian](https://img.shields.io/badge/debian->=10-brown)
+
 ## ubuntu-hamonikr-respin
 
 우분투를 사용하고 있어도 하모니카 OS의 향상된 UX 및 프로그램을 사용할 수 있습니다.
 
 ![hamonikr](./hamonikr.png)
 
-
  - 우분투 데스크톱을 하모니카로 변경하는 패키지 : `ubuntu-hamonikr-respin`
 
-### Ubuntu 22.04 에서 하모니카 데스크톱 환경을 사용하는법
+### Ubuntu (>=22.04)
+하모니카 데스크톱 환경을 사용하려면 터미널에서 다음과 같이 실행하세요
 
 ```
 wget -qO- https://repo.hamonikr.org/hamonikr.apt | sudo -E bash -
@@ -16,9 +20,9 @@ sudo apt-get install -y ubuntu-hamonikr-respin
 
 ```
 
-### Ubuntu (20.04), LMDE 5, Debian (bullseye) 에서 하모니카 데스크톱 환경을 사용하는법
+### Ubuntu (20.04), LMDE 5, Debian (bullseye) 
 
-우분투 및 데비안 계열에서 다음과 같이 하모니카 환경을 사용할 수 있습니다.
+하모니카 데스크톱 환경을 사용하려면 터미널에서 다음과 같이 실행하세요
 
 ```
 wget -qO- https://update.hamonikr.org/add-update-repo.apt | sudo -E bash -
