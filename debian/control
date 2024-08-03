@@ -425,6 +425,16 @@ Description: Mint Cursor theme
  A flat, colorful, and modern theme based on
  Paper and Moka.
 
+Package: mint-backgrounds-victoria
+Architecture: all
+Description: Mint backgrounds victoria
+ Empty backgrounds.
+
+Package: mint-backgrounds-wilma
+Architecture: all
+Description: Mint backgrounds wilma
+ Empty backgrounds.
+
 Package: hamonikr-main-apps
 Architecture: all
 Conflicts:

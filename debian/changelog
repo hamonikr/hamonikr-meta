@@ -1,3 +1,10 @@
+hamonikr-meta (3.7.1) unstable; urgency=medium
+
+  [Kevin Kim]
+  * Add empty victoria, wilma backgrounds
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 03 Aug 2024 20:44:17 +0900
+
 hamonikr-meta (3.7.0) unstable; urgency=medium
 
   [Kevin Kim]

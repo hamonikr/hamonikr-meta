@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Copyright HamoniKR Project. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for license information.
+
+
+if [[ -d "/usr/share/backgrounds/linuxmint-victoria/" ]]; then
+    rm -frv /usr/share/backgrounds/linuxmint-victoria || true
+    rm -frv /usr/share/cinnamon-background-properties/linuxmint-victoria.xml || true
+    rm -frv /usr/share/gnome-background-properties/linuxmint-victoria.xml || true
+    rm -frv /usr/share/mate-background-properties/linuxmint-victoria.xml || true
+    rm -frv /usr/share/doc/mint-backgrounds-victoria || true
+    rm -frv /usr/share/xfce4/backdrops/victoria* || true
+    rm -frv /usr/share/wallpapers/*Victoria* || true
+fi
