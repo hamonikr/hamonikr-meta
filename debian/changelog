@@ -1,3 +1,10 @@
+hamonikr-meta (3.7.2) unstable; urgency=medium
+
+  [Kevin Kim]
+  * Add obsidian, megasync, kollusagent
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 04 Aug 2024 09:38:44 +0900
+
 hamonikr-meta (3.7.1) unstable; urgency=medium
 
   [Kevin Kim]
