@@ -1,3 +1,10 @@
+hamonikr-meta (3.7.4) unstable; urgency=medium
+
+  [Kevin Kim]
+  * Update hamonikr-desktop-environment
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 09 Aug 2024 10:57:46 +0900
+
 hamonikr-meta (3.7.3) unstable; urgency=medium
 
   [Kevin Kim]
