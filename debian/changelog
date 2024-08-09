@@ -1,3 +1,10 @@
+hamonikr-meta (3.7.5) unstable; urgency=medium
+
+  [Kevin Kim]
+  * Remove hamonikr-checksum
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 09 Aug 2024 12:15:29 +0900
+
 hamonikr-meta (3.7.4) unstable; urgency=medium
 
   [Kevin Kim]
