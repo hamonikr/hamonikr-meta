@@ -1,3 +1,9 @@
+hamonikr-meta (2024.08.10+h1) unstable; urgency=medium
+
+  * Merge from latest mint-meta-codecs package
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 10 Aug 2024 22:10:21 +0900
+
 hamonikr-meta (3.7.8) unstable; urgency=medium
 
   [Kevin Kim]
