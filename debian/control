@@ -170,7 +170,18 @@ Recommends: celluloid,
             naver-whale-stable,
             nemo-share,
             samba,
-            ubiquity-slideshow-mint
+            ubiquity-slideshow-mint,
+            apt-file,
+            apt-rdepends,
+            hamonikr-nemo-rabbitvcs,
+            jq,
+            nemo-compare,
+            nemo-emblems,
+            nemo-filename-repairer,
+            nemo-image-converter,
+            nemo-share,            
+            tree,
+            vim
 Description: HamoniKR desktop environment
  하모니카OS의 전체 환경을 구성하는 패키지.
 
