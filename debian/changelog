@@ -1,3 +1,9 @@
+hamonikr-meta (2024.08.15) unstable; urgency=medium
+
+  * Change package name stacer to hamonikr-stacer
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 15 Aug 2024 15:32:44 +0900
+
 hamonikr-meta (2024.08.10+h1) unstable; urgency=medium
 
   * Merge from latest mint-meta-codecs package
