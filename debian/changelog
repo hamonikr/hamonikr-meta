@@ -1,3 +1,10 @@
+hamonikr-meta (2024.08.22) unstable; urgency=medium
+
+  * Removed gnome-clock
+   - Cause problem while upgrade from kumkang
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 22 Aug 2024 10:02:32 +0900
+
 hamonikr-meta (2024.08.15) unstable; urgency=medium
 
   * Change package name stacer to hamonikr-stacer
