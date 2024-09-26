@@ -1,3 +1,9 @@
+hamonikr-meta (2024.09.27) unstable; urgency=medium
+
+  * Removed gprename
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 27 Sep 2024 08:44:30 +0900
+
 hamonikr-meta (2024.08.22) unstable; urgency=medium
 
   * Removed gnome-clock
